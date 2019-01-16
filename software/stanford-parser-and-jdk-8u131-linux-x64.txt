@@ -1,0 +1,3 @@
+Following software here:
+jdk-8u131-linux-x64.tar.gz
+stanford-parser-full-2016-10-31.zip

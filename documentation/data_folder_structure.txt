@@ -1,0 +1,53 @@
+The data folder is structured as below
+
+# 1. BioNLP dataset and MUC6 LDC dataset sources
+    source/
+    ├── BioNLPdata
+    │   ├── BB2011
+    │   ├── BB2013
+    │   ├── BB3-data
+    │   ├── GE4
+    │   └── SeeDev
+    └── LDC2003T13
+        └── MUC6
+
+# 2. entity and relation annotations for the MUC6 dataset
+    annotations/
+    └── muc6_annotations
+        ├── muc6_entity_annotations
+        └── muc6_relation_annotations
+
+
+# 3. datasets processed_input for the algorithms
+    processed_input/
+    ├── BB2011
+    ├── BB2013
+    ├── BB2016
+    └── MUC6
+
+    The datasets are further structured as follows, bb2011 and bb2013 has 3 splits where the train and dev sets are split randomly.
+    processed_input/
+    ├── BB2016
+    │   ├── dev
+    │   │   ├── k_0
+    │   │   ├── k_le_1
+    │   │   ├── k_le_2
+    │   │   └── k_le_3
+    │   ├── test
+    │   │   ├── k_0
+    │   │   ├── k_all
+    │   │   ├── k_le_1
+    │   │   ├── k_le_2
+    │   │   ├── k_le_3
+    │   │   └── k_le_8
+    │   └── train
+    │       ├── k_0
+    │       ├── k_le_1
+    │       ├── k_le_2
+    │       └── k_le_3
+
+
+# 4. results
+    Contains the BB2016 evaluation service results for various approaches.
+
+

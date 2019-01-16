@@ -1,0 +1,66 @@
+# dataset processed input: full sentence + dep parse tree
+
+1. full sentence:
+'BB-event-24198224::1::Others::S. Paratyphi A::travelers::  In Asia, Salmonella Paratyphi A is an emerging infection, and <e2>travelers</e2> are increasingly at risk.  During October 2009-November 2009, an outbreak in <e1>S. Paratyphi A</e1> infection was noted in Israeli travelers returning from Nepal.::Bacteria::Habitat::T12::T11::O19
+
+2. sdp_dep
+[
+	[
+		'BB-event-24198224::1::Others::S. Paratyphi A::travelers::  In Asia, Salmonella Paratyphi A is an emerging infection, and <e2>travelers</e2> are increasingly at risk.  During October 2009-November 2009, an outbreak in <e1>S. Paratyphi A</e1> infection was noted in Israeli travelers returning from Nepal.::Bacteria::Habitat::T12::T11::O19\r\n'
+	],
+
+	[
+		[
+			[
+				['1', 'In', 'IN', '2', 'case'],
+				['2', 'Asia', 'NNP', '10', 'nmod'],
+				['4', 'Salmonella', 'NNP', '6', 'compound'],
+				['5', 'Paratyphi', 'NNP', '6', 'compound'],
+				['6', 'A', 'NNP', '10', 'nsubj'],
+				['7', 'is', 'VBZ', '10', 'cop'],
+				['8', 'an', 'DT', '10', 'det'],
+				['9', 'emerging', 'VBG', '10', 'amod'],
+				['10', 'infection', 'NN', '0', 'root'],
+				['12', 'and', 'CC', '10', 'cc'],
+				['13', 'travelers', 'NNS', '17', 'nsubj'],
+				['14', 'are', 'VBP', '17', 'cop'],
+				['15', 'increasingly', 'RB', '17', 'advmod'],
+				['16', 'at', 'IN', '17', 'case'],
+				['17', 'risk', 'NN', '10', 'conj']
+			],
+			[
+				['1', 'During', 'IN', '2', 'case'],
+				['2', 'October', 'NNP', '14', 'nmod'],
+				['3', '2009-November', 'JJ', '2', 'amod'],
+				['4', '2009', 'CD', '3', 'dep'],
+				['6', 'an', 'DT', '7', 'det'],
+				['7', 'outbreak', 'NN', '14', 'nsubjpass'],
+				['8', 'in', 'IN', '10', 'case'],
+				['9', 'S.', 'NNP', '10', 'compound'],
+				['10', 'Paratyphi', 'NNP', '7', 'nmod'],
+				['11', 'A', 'DT', '12', 'det'],
+				['12', 'infection', 'NN', '10', 'dep'],
+				['13', 'was', 'VBD', '14', 'auxpass'],
+				['14', 'noted', 'VBN', '0', 'root'],
+				['15', 'in', 'IN', '17', 'case'],
+				['16', 'Israeli', 'JJ', '17', 'amod'],
+				['17', 'travelers', 'NNS', '14', 'nmod'],
+				['18', 'returning', 'VBG', '17', 'acl'],
+				['19', 'from', 'IN', '20', 'case'],
+				['20', 'Nepal', 'NNP', '18', 'nmod']
+			]
+		],
+		[
+			[27, ['9', 'S.', 'NNP', '10', 'compound']],
+			[28, ['10', 'Paratyphi', 'NNP', '7', 'nmod']],
+			[25, ['7', 'outbreak', 'NN', '14', 'nsubjpass']],
+			[32, ['14', 'noted', 'VBN', '0', 'root']],
+			[10, ['10', 'infection', 'NN', '0', 'root']],
+			[17, ['17', 'risk', 'NN', '10', 'conj']],
+			[13, ['13', 'travelers', 'NNS', '17', 'nsubj']]
+		]
+	]
+]
+
+3. sdp_sent
+BB-event-24198224::1::Others::S. Paratyphi A::travelers::<e2>travelers</e2> risk infection noted outbreak <e1>S. Paratyphi A</e1>::Bacteria::Habitat::T12::T11::O19

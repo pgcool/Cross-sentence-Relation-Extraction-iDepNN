@@ -1,0 +1,31 @@
+### RNN hyperparameter modifications ###
+    1. w.r.t experiments
+        BRNN - BRNN using fdp input
+        idepnn-sdp - BRNN using sdp input
+        idepnn-adp - BRNN using sdp input and subtree features
+
+    2. w.r.t datasets
+        # n_classes
+                - MUC6 : 3
+                - BB* : 2
+        # filename_train_data
+        # filename_dev_data
+        # filename_test_data
+        # data_set_sent_corpus
+        # word2vec_emb_file
+
+        # cp utils/features<__>.py utils/features.py
+        # cp utils/getMacroFScore<__>.py utils/getMacroFScore.py
+
+    3. w.r.t train/predict
+        - train mode
+            # 'train_model' : [True],
+            # 'reload_model': [False],
+
+        - predict mode
+            # 'train_model' : [False],
+            # 'reload_model': [True],
+            # 'reload_path':['./models/EB_RNN_RC_word2vec_update_2018-02-20_6/'],
+
+    4. hyperparameters
+        ...
