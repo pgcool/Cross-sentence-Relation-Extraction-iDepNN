@@ -25,7 +25,7 @@ This repository consists of the following data
         Set "train_model" = False, "reload_model" = True and load model by specifying the path in "reload_path"
 
 
-    Detailed documentation in directory: "./documentation"
+    ***** Detailed documentation in directory: "./documentation" *****
 
 
 
